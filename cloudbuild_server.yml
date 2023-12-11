@@ -1,13 +1,13 @@
 steps:
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['config', 'set', 'project', 'thebridgeschool-cloud']
+  args: ['config', 'set', 'project', 'mi-proyecto-thebridge']
 
-# Build the container image
+# Crea la imagen en un conenedor
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/users-app-server:$COMMIT_SHA', '-f', 'server/Dockerfile', '.']
 
-# Push the container image to Container Registry
+# Sube la imagen creada al gcr
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/users-app-server:$COMMIT_SHA']
 
@@ -31,7 +31,7 @@ steps:
 images:
 - 'gcr.io/$PROJECT_ID/users-app-server:$COMMIT_SHA'
 
-availableSecrets:
-  secretManager:
-    - versionName: projects/623401579225/secrets/DB_URL_ATLAS/versions/latest
-      env: 'DB_URL_ATLAS'
+#availableSecrets:
+ # secretManager:
+  #  - versionName: projects/623401579225/secrets/DB_URL_ATLAS/versions/latest
+   #   env: 'DB_URL_ATLAS'
