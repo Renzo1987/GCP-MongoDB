@@ -31,7 +31,7 @@ steps:
 images:
 - 'gcr.io/$PROJECT_ID/users-app-server:$COMMIT_SHA'
 
-#availableSecrets:
- # secretManager:
-  #  - versionName: projects/623401579225/secrets/DB_URL_ATLAS/versions/latest
-   #   env: 'DB_URL_ATLAS'
+availableSecrets:
+  secretManager:
+    - versionName: projects/222282761645/secrets/DB_URL_ATLAS/versions/1
+      env: 'DB_URL_ATLAS'
