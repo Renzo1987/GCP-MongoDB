@@ -1,7 +1,7 @@
 steps:
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['config', 'set', 'project', 'thebridgeschool-cloud']
+  args: ['config', 'set', 'project', 'mi-proyecto-thebridge']
 
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
@@ -33,5 +33,5 @@ images:
 
 availableSecrets:
   secretManager:
-    - versionName: projects/623401579225/secrets/DB_URL_ATLAS/versions/latest
+    - versionName: projects/222282761645/secrets/DB_URL_ATLAS/versions/1
       env: 'DB_URL_ATLAS'
