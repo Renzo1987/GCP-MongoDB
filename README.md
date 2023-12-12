@@ -62,13 +62,6 @@ Se utiliza para manejar las solicitudes de los clientes y realizar operaciones e
 ![acceso_ips.png](img%2Facceso_ips.png)
 
 
-
-
-![img.png](img/modificacion_url_backend.png)
-
-### Endpoints generales de la aplicación:
-
-
 ## Dockerización de la Aplicación 
 
 En este ejemplo hemos dividido la creación de la app en dos docker distintos, por un lado el 
