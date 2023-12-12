@@ -96,3 +96,9 @@ Los ficheros cloud build puedes verlos en los siguientes ficheros:
 - En este fichero .yml, aparte de realizar las mismas modificaciones que en fichero anterior, hay que modificar la ulr de los ficheros **Create.jsx** y **UsersDatabase.jsx** con la url que devuelve la CloudRun del server levantado anteriormente.
 
 ![img.png](img/modificacion_url_backend.png)
+
+## Pagina web
+
+Con esto, nuestra app estaria funcionando correctamente y cada cambio que se realice en el codigo del repositorio se implementara en nuestra app.
+
+![pagina.png](img%2Fpagina.png)
